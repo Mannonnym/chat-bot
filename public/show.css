@@ -1,0 +1,62 @@
+/* نخلي الصفحة كلها عمود */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* ياخذ طول الشاشة كله */
+  font-family: Arial, sans-serif;
+}
+
+/* العنوان فوق */
+.title {
+  text-align: center;
+  padding: 10px;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+/* منطقة الرسائل */
+#chat-box {
+  flex: 1; /* ياخذ المساحة المتبقية */
+  overflow-y: auto; /* سكرول للرسائل */
+  padding: 10px;
+  background: #fafafa;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* البار تحت */
+.container {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+}
+
+/* شكل input bar */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text3 {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.send {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background: #45a049;
+}
